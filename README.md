@@ -41,6 +41,14 @@ To run Ruff using the development dependency group:
 uv run --group dev ruff check .
 ```
 
+### Running tests
+
+To run the `tests/test_roundtrip.py` test using the uv-managed environment:
+
+```bash
+uv run --group dev python -m pytest tests/test_roundtrip.py
+```
+
 # Avro / fastavro PoC (Python 3.9.6)
 
 This is a minimal "go-to" project that demonstrates using both **avro** (Apache reference
