@@ -1,0 +1,25 @@
+[project]
+name = "avro-fastavro-poc"
+version = "0.1.0"
+description = "PoC for Avro and fastavro on Python 3.9.6 using uv and ruff."
+requires-python = ">=3.9,<3.10"
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+  "avro==1.12.1",
+  "fastavro==1.12.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff==0.15.4",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
