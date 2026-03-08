@@ -2,7 +2,7 @@
 name = "avro-fastavro-poc"
 version = "0.1.0"
 description = "PoC for Avro and fastavro on Python 3.9.6 using uv and ruff."
-requires-python = ">=3.9,<3.10"
+requires-python = "==3.9.6"
 readme = "README.md"
 license = { text = "MIT" }
 
@@ -11,7 +11,7 @@ dependencies = [
   "fastavro==1.12.1",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
   "ruff==0.15.4",
 ]

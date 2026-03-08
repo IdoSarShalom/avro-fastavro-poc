@@ -1,6 +1,6 @@
 version = 1
 revision = 3
-requires-python = "==3.9.*"
+requires-python = "==3.9.6"
 
 [[package]]
 name = "avro"
@@ -20,7 +20,7 @@ dependencies = [
     { name = "fastavro" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "ruff" },
 ]
@@ -29,9 +29,10 @@ dev = [
 requires-dist = [
     { name = "avro", specifier = "==1.12.1" },
     { name = "fastavro", specifier = "==1.12.1" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = "==0.15.4" },
 ]
-provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = "==0.15.4" }]
 
 [[package]]
 name = "fastavro"
