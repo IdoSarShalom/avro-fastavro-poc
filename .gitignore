@@ -1,6 +1,5 @@
 /.venv
 /users.avro
-/wheels/
 __pycache__/
 *.py[cod]
 *.egg-info/
